@@ -14,7 +14,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: "muen/salt"
+  IMAGE_NAME: "buyfakett/salt"
   SALT_VERSION: "3007.6"
 
 jobs:
@@ -48,6 +48,6 @@ jobs:
           context: .
           platforms: linux/arm64,linux/amd64
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          标签: ${{ steps.meta.outputs.tags }}
           build-args: |
             SALT_VERSION=${{ env.SALT_VERSION }}
